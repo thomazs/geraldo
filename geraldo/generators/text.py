@@ -120,7 +120,7 @@ class TextGenerator(ReportGenerator):
 
         # Saves to file or just returns the text
         if hasattr(self, 'filename'):
-            fp = file(self.filename, 'w')
+            fp = open(self.filename, 'w')
             fp.write(text)
             fp.close()
         else:
